@@ -4,7 +4,7 @@ import { FreeMode, Pagination } from "swiper/modules";
 
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
-import "./Ev2.css";
+import "./ev2.css";
 import { UserContext } from "../../Context/SiteContext";
 
 import { filterService } from "../../Service/filter";

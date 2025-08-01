@@ -4,7 +4,7 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import './Ev1.css';
+import './ev1.css';
 
 function Ev1() {
   return (

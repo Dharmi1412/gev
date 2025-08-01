@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import './signIn.css'
+import './SignIn.css'
 
 export default function SignIn({ setSignIn }) {
     const [form, setForm] = useState({
