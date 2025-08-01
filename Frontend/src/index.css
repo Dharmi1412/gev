@@ -1,0 +1,80 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+:root {
+  /* css variables  */
+  --light-primary: #EAE0D5;
+  --light-sec: #C6AC8E;
+  --dark-primary: #0A0908;
+  --dark-sec: #5E503F;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  box-sizing: border-box;
+  font: inherit;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: sans-serif;
+  
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: var(--light-primary);
+  color: var(--dark-primary);
+  /* padding: .5rem;  */
+}
+
+a {
+  color: inherit;
+}
+
+input,
+button,
+textarea {
+  outline: none;
+  border: none;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+select {
+  /* for Firefox */
+  -moz-appearance: none;
+  /* for Safari, Chrome, Opera */
+  -webkit-appearance: none;
+}
+
+/* for IE10 */
+select::-ms-expand {
+  display: none;
+}
+
+.divider {
+  margin-bottom: 3rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.item-center {
+  align-items: center;
+}
+
+@media(width<650px) {
+  body {
+    padding: 0rem;
+  }
+
+}

@@ -1,0 +1,17 @@
+.nav-div {
+  height: 65px;
+  width: 100%;
+  background-color: var(--dark-sec);
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  color: var(--light-primary);
+}
+.navbar {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.navbar:hover {
+  color: var(--light-sec);
+}

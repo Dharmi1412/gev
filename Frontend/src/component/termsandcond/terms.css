@@ -1,0 +1,18 @@
+.terms-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 30px;
+  font-family: Arial, sans-serif;
+  line-height: 1.7;
+}
+
+.terms-container h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.terms-container h2 {
+  margin-top: 25px;
+  font-size: 1.3rem;
+  color: #444;
+}

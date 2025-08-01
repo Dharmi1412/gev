@@ -1,0 +1,31 @@
+.policy-div h1 {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: larger;
+}
+
+.policy {
+    padding: 20px;
+}
+
+.policy-div {
+    margin-top: 30px;
+}
+
+.policy-main h1 {
+    color: var(--dark-sec);
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.policy-main {
+    /* background: var(--dark-primary); */
+    padding: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.last-div {
+    margin-bottom: 40px;
+}

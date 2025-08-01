@@ -1,0 +1,83 @@
+.add-product-div1{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.add-image1{
+    color: var(--dark-sec);
+}
+
+.addons1{
+    width: 140px;
+    height: 135px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--dark-sec);
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.addons3{
+    width: 350px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--dark-sec);
+    /* margin-top: 20px;
+    margin-bottom: 20px; */
+
+}
+
+.product-div {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center; 
+    border: 1px solid var(--dark-sec);
+    width: 350px;
+    height: 400px;
+}
+
+.product-div p{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    font-size: 50px;
+    /* text-align: center; */
+    margin-top: 10px;
+    color: var(--dark-sec);
+}
+
+.detail-div1 input{
+    width: 100%;
+    height: 30px;
+    border: 1px solid var(--dark-sec);
+    margin: 10px;
+    padding-left: 10px;
+
+}
+.detail-div1 label{
+
+    color:rgb(136 147 159);;
+}
+
+.detail-div1 button{
+    width: 70%;
+    height: 30px;
+    background-color: var(--dark-sec);
+    color: white;
+    border: none;
+    margin: 20px;
+    margin-left: 45px;
+    cursor: pointer;
+}
+
+.detail-div1 button:hover{
+  color: var(--light-sec);
+
+}
+

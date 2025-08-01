@@ -1,0 +1,59 @@
+.top-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  background-color: var(--light-primary);
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
+  color: #7a7a7a;
+  flex-wrap: wrap;
+}
+
+.left-section span {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 15px;
+  gap: 6px;
+}
+
+.center-section {
+  display: flex;
+  gap: 12px;
+}
+
+.right-section {
+  display: flex;
+  gap: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .top-navbar {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .left-section, .center-section, .right-section {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .center-section{
+    display: none;
+  }
+
+  .left-section{
+    display: none;
+  }
+    
+}
+/* In your Subnav.css */
+.nav-link {
+  color: #7a7a7a;
+
+  text-decoration: none;
+  margin-left: 10px;
+}
+.nav-link:hover {
+  text-decoration: underline;
+}

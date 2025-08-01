@@ -1,0 +1,88 @@
+.footer {
+  background-color: #d2b48c; /* light brown */
+  color: #111;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 50px;
+  flex-wrap: wrap;
+  font-family: Arial, sans-serif;
+  border-top: 2px solid #aaa;
+}
+
+.footer-left h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.footer-left p {
+  margin: 5px 0;
+}
+
+.footer-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.footer-links a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #111;
+  font-weight: 500;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-right {
+  max-width: 300px;
+}
+
+.subscribe-text {
+  margin-bottom: 10px;
+}
+
+.subscribe-form {
+  display: flex;
+  gap: 10px;
+}
+
+.subscribe-form input {
+  flex: 1;
+  padding: 8px;
+  background-color:var(--light-sec) ;
+  border: 1px solid #666;
+  border-radius: 4px;
+}
+
+.footer-right button {
+  padding: 8px 16px;
+  background-color:var(--dark-sec);
+  color: var(--light-sec);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.footer-right button:hover {
+  background-color:var(--dark-sec);
+;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .footer-right {
+    margin: auto;
+  }
+.footer {
+  display: block;
+}
+
+}

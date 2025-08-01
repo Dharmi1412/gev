@@ -1,0 +1,16 @@
+.reg2-div {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.reg2-div p {
+    background: none;
+    font-size: large;
+}
+
+.reg-btn:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,35 @@
+.row-lable {
+    font-size: .8rem;
+    opacity: .8;
+}
+.row-value {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: block;
+}
+.product-fields {
+    min-width: 100px;
+    max-width: 200px;
+}
+.list-main-wrapper {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    gap: 1rem;
+}
+.product-row {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    gap: 1rem;
+
+}
+
+.product-main-img {
+    max-width: 300px;
+    overflow: hidden;
+    /* background: red; */
+    border: 1px solid;
+}

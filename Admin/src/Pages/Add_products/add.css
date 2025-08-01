@@ -1,0 +1,124 @@
+.add-product-div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.add-image {
+  color: var(--dark-sec);
+}
+
+.addons {
+  width: 140px;
+  height: 135px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--dark-sec);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.addons2 {
+  width: 350px;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--dark-sec);
+  /* margin-top: 20px;
+    margin-bottom: 20px; */
+}
+
+.product-div {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--dark-sec);
+  width: 350px;
+  height: 400px;
+}
+
+.product-div p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  /* text-align: center; */
+  margin-top: 10px;
+  color: var(--dark-sec);
+}
+
+.detail-div input {
+  width: 100%;
+  height: 30px;
+  border: 1px solid var(--dark-sec);
+  margin: 10px;
+  padding-left: 10px;
+}
+.detail-div label {
+  color: rgb(136 147 159);
+}
+
+.detail-div button {
+  width: 70%;
+  height: 30px;
+  background-color: var(--dark-sec);
+  color: white;
+  border: none;
+  margin: 20px;
+  margin-left: 45px;
+  cursor: pointer;
+}
+
+.detail-div button:hover {
+  color: var(--light-sec);
+}
+
+.uploaded-product-img {
+  height: 100%;
+  width: 100%;
+}
+
+@media (width < 650px) {
+  .addons2 {
+    width: 350px;
+    height: 350px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--dark-sec);
+  }
+
+  .add-product-div {
+    display: block;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .detail-div input {
+    width: auto;
+    height: 30px;
+    border: 1px solid var(--dark-sec);
+    margin: 10px;
+    padding-left: 10px;
+  }
+  .add-image {
+    color: var(--dark-sec);
+    /* display: block;
+    align-items: center;
+    justify-content: center; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 10px; 
+    margin-bottom: 1rem;
+  }
+}
+
+.product-action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}

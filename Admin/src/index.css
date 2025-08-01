@@ -1,0 +1,33 @@
+:root {
+  /* css variables  */
+  --light-primary: #eae0d5;
+  --light-sec: #c6ac8e;
+  --dark-primary: #0a0908;
+  --dark-sec: #5e503f;
+}
+* {
+  padding: 0px;
+  margin: 0px;
+  color: inherit;
+  text-decoration: none;
+
+  font-family: sans-serif;
+}
+html,
+body {
+  /* height: 100%;
+  width: 100%; */
+  min-height: 100%;
+}
+body {
+  padding: 0px;
+}
+input{
+  outline: none;
+  border: none;
+
+}
+img {
+    height: 100%;
+    width: 100%;
+}
