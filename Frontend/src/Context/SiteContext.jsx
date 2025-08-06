@@ -1,6 +1,6 @@
 import React, { createContext, useEffect, useState } from "react";
 import axios from "axios";
-
+import { toast } from "react-toastify";
 export const UserContext = createContext(); // ✅ This is your actual context object
 
 const SiteContext = ({ children }) => {
@@ -60,12 +60,13 @@ const SiteContext = ({ children }) => {
         `${import.meta.env.VITE_BASE_URL}api/product/list`
       );
 
-      // alert("Product listed successfully!");
+      toast.success(`Product listed successfully!`);
       console.log(res.data.products);
       setProducts(res.data.products);
     } catch (error) {
-      console.error("Upload failed:", error);
-      alert(`error adding product`);
+      console.error("error loading products:", error);
+      // alert(`Could not connect to database`);
+      toast.error(`Could not connect to database`);
     }
   };
   useEffect(() => {
