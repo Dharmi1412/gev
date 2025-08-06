@@ -15,7 +15,15 @@ dotenv.config();
 connectToDB();
 cloudinary;
 
-app.use(cors());
+// app.use(cors());
+app.use(
+  cors({
+    origin: "https://evera-beta.vercel.app",
+    methods: ["GET", "POST", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+  })
+);
+
 app.use(express.json());
 
 app.use("/api/user", userRoutes);
