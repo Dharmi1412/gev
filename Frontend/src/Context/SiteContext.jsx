@@ -56,12 +56,13 @@ const SiteContext = ({ children }) => {
   const [products, setProducts] = useState([]);
   const fetchData = async () => {
     try {
+      console.log(`${import.meta.env.VITE_BASE_URL}api/product/list`);
       const res = await axios.get(
         `${import.meta.env.VITE_BASE_URL}api/product/list`
       );
 
       toast.success(`Product listed successfully!`);
-      console.log(res.data.products);
+      console.log("running fetchData ", res.data.products);
       setProducts(res.data.products);
     } catch (error) {
       console.error("error loading products:", error);

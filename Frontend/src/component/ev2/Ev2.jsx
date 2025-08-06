@@ -13,6 +13,7 @@ import Filter from "../filter/Filter";
 function Ev2() {
   const { products, fetchData } = useContext(UserContext);
   useEffect(() => {
+    console.log("Fetch data from ev2")
     fetchData();
   }, []);
   console.log(products);
