@@ -11,8 +11,10 @@ import { filterService } from "../../Service/filter";
 import Filter from "../filter/Filter";
 
 function Ev2() {
-  const { products, setProducts } = useContext(UserContext);
-
+  const { products, fetchData } = useContext(UserContext);
+  useEffect(() => {
+    fetchData();
+  }, []);
   console.log(products);
 
   return (

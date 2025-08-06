@@ -74,6 +74,7 @@ const SiteContext = ({ children }) => {
   const values = {
     products,
     setProducts,
+    fetchData,
   };
 
   return <UserContext.Provider value={values}>{children}</UserContext.Provider>;
