@@ -21,7 +21,7 @@ function Brands() {
       </div>
       <Swiper
         slidesPerView={5}
-        spaceBetween={100}
+        spaceBetween={200}
         pagination={{
           clickable: true,
         }}
