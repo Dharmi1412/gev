@@ -18,7 +18,11 @@ cloudinary;
 // app.use(cors());
 app.use(
   cors({
-    origin: "https://evera-beta.vercel.app",
+    origin: [
+      "https://evera-beta.vercel.app",
+      "http://localhost:5174/",
+      "http://localhost:5173/",
+    ],
     methods: ["GET", "POST", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
   })
