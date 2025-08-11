@@ -31,7 +31,7 @@ export default function SignUp() {
       return alert("Passwords do not match.");
     try {
       const res = await fetch(
-        "${import.meta.env.VITE_BASE_URL}api/user/signup",
+        `${import.meta.env.VITE_BASE_URL}api/user/signup`,
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
