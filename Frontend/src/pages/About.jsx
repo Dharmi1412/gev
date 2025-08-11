@@ -20,13 +20,16 @@ export default function About() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await fetch("http://localhost:5000/api/feedback/submit", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(form),
-      });
+      const res = await fetch(
+        `${import.meta.env.VITE_BASE_URL}api/feedback/submit`,
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(form),
+        }
+      );
       if (res.ok) {
-        alert("Feedback sent!");
+        alert("Feedback sent!"); 
         setForm({
           name: "",
           email: "",
@@ -49,31 +52,26 @@ export default function About() {
       </div>
 
       <div className="about-second">
-
         <div className="sub-second1">
-
           <div className="subhead-div">
             <h1>Contact Information</h1>
           </div>
 
           <h1 className="h1div">For Business Inquiry</h1>
-          
-          <div className="flex-div">
 
+          <div className="flex-div">
             <div className="flex-item">
               <IoIosCall /> +91 1234567890
             </div>
-                
+
             <div>
               <IoIosMail /> gebike123@gebike{" "}
             </div>
-
           </div>
 
           <h1 className="h1div">Customer Helpline</h1>
-          
-          <div className="flex-div">
 
+          <div className="flex-div">
             <div className="flex-item">
               <IoIosCall /> +91 1234567890
             </div>
@@ -81,31 +79,26 @@ export default function About() {
             <div>
               <IoIosMail /> gebike123@gebike{" "}
             </div>
-
           </div>
 
           <h1 className="h1div">For Career</h1>
-        
-          <div className="flex-div">
 
+          <div className="flex-div">
             <div className="flex-item">
               <IoIosCall /> +91 1234567890
             </div>
-            
+
             <div>
               <IoIosMail /> gebike123@gebike{" "}
             </div>
-          
           </div>
-
         </div>
 
         <div className="sub-second2">
-        
           <div className="subhead2-div">
             <h1>Give Us Your Feedback</h1>
           </div>
-        
+
           <div className="pdiv">
             <p>
               We want to know what you thought of your experience at EVIndia so
@@ -114,7 +107,7 @@ export default function About() {
               valuable feedback
             </p>
           </div>
-          
+
           <form onSubmit={handleSubmit}>
             <div className="input-a-div">
               <div className="labeldiv">

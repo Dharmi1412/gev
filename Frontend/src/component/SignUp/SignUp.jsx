@@ -30,18 +30,21 @@ export default function SignUp() {
     if (form.password !== form.confirmPassword)
       return alert("Passwords do not match.");
     try {
-      const res = await fetch("http://localhost:5000/api/user/signup", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          name: form.name,
-          userName: form.userName,
-          number: form.number,
-          city: form.city,
-          email: form.email,
-          password: form.password,
-        }),
-      });
+      const res = await fetch(
+        "${import.meta.env.VITE_BASE_URL}api/user/signup",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            name: form.name,
+            userName: form.userName,
+            number: form.number,
+            city: form.city,
+            email: form.email,
+            password: form.password,
+          }),
+        }
+      );
       const data = await res.json();
       alert(data.message);
       if (data.message === "User created successfully") {

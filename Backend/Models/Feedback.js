@@ -10,4 +10,7 @@ const FeedbackSchema = new mongoose.Schema({
   description: String,
 });
 
-export default mongoose.model("Feedback", FeedbackSchema);
+const FeedBackModel =
+  mongoose.models.FeedBack || mongoose.model("FeedBack", FeedbackSchema);
+
+export default FeedBackModel;
