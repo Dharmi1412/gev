@@ -27,25 +27,24 @@ const Product = () => {
     <div>
       <div className="products">
         <div className="subproduct-div  ">
-            <div className="products-div">
-          {product.image && product.image.length > 0 ? (
-            product.image.map((img, idx) => (
-              <img key={idx} src={img} alt={`product-img-${idx}`} />
-            ))
-          ) : (
-            <span>No images available</span>
-          )}
-        </div>
-     
+          <div className="products-div">
+            {product.image && product.image.length > 0 ? (
+              product.image.map((img, idx) => (
+                <img key={idx} src={img} alt={`product-img-${idx}`} />
+              ))
+            ) : (
+              <span>No images available</span>
+            )}
+          </div>
         </div>
 
-        <div className="subproduct-div">
+        <div className="subproducts-div">
           <div>
             <img src={product.image[0]} alt="" />
           </div>
         </div>
 
-        <div className="subproduct-div">
+        <div >
           <h2>{product.ProductName}</h2>
           <p>Price: {product.price}</p>
           <p>range:{product.range}</p>

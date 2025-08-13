@@ -5,21 +5,26 @@
     justify-content: start;
 }
 
-.subproduct-div{
-
+.products-div{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* Optional: set width or max-width as needed */
+  /* width: 200px; */
 }
 
 .subproduct-div img{
     border: 1px solid black;
-    height: 500px;
-    width: 500px;
+    height: 200px;
+    width: 200px;
     margin: 10px 40px;
 
 }
 
-.products-div{
-    height: 200px;
-    width: 200px;
+.subproducts-div{
+    height: 500px;
+    width: 500px;
     border: 1px solid black;
     margin: 10px;
 }
+
