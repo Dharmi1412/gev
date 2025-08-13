@@ -1,4 +1,4 @@
-.brands-wrapper {
+/* .brands-wrapper {
   padding: 0.5rem;
 }
 
@@ -10,9 +10,7 @@
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  /* background: #444; */
 
-  /* Center slide text vertically */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,4 +28,4 @@
   width: 170px;
   border-radius: 50%;
   border: 0.5px solid black;
-}
+} */
