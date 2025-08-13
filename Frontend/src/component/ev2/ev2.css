@@ -75,3 +75,28 @@ padding: .5rem
   justify-content: center;
   gap: 1rem;
 }
+@media (width<935px) {
+
+.swiper-slide img {
+  display: block;
+  /* .swiper-slide img { */
+    display: block;
+    width: 80% !important;
+    /* height: 100%;
+    object-fit: cover;*/
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.prod-card {
+  border: 1px solid var(--dark-primary);
+  display: flex;
+  flex-direction: column;
+  min-height: 370px;
+  height:450px;
+  width: 100%;
+  padding: 1rem;
+  background: aliceblue;
+}
+
+}

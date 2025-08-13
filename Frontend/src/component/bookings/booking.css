@@ -46,3 +46,18 @@
   left: 33%;
   margin-bottom: 10px;
 }
+@media (width<935px) {
+
+
+.bookings {
+    /* height: 400px; */
+    width: 85%;
+    border: 1px solid rgb(91, 89, 89);
+    border-radius: 10px;
+    background-color: white;
+    position: fixed;
+    top: 15%;
+    left: 8%;
+    z-index: 1000;
+}
+}
