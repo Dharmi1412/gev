@@ -61,9 +61,7 @@ function Ev2() {
 
                 <div className="prod-name">
                   <p>{product.ProductName}</p>
-                  <Link
-                    to={`http://localhost:5173/product/${product.ProductId}`}
-                  >
+                  <Link to={`/product/${product.ProductId}`}>
                     <button>view</button>
                   </Link>
                   <button onClick={() => setShowForm(!showForm)}>
@@ -105,3 +103,4 @@ function Ev2() {
 }
 
 export default Ev2;
+
