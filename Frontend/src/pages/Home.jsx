@@ -13,7 +13,7 @@ export default function Home() {
       <div className="divider"></div>
       <Ev2 />
       <div className="divider"></div>
-      <Brands />
+      {/* <Brands /> */}
       <div className="divider"></div>
       <FAQs/>
       <div className="divider"></div>
