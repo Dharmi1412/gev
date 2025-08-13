@@ -51,6 +51,7 @@ export default function Add() {
 
   // Handle Submit
   const handleSubmit = async (e) => {
+    console.log("Adding ");
     e.preventDefault();
 
     const product = {
@@ -67,6 +68,7 @@ export default function Add() {
       );
       toast.success("Product added successfully!");
       console.log(res.data);
+      console.log("Adding done ");
     } catch (error) {
       console.error("Upload failed:", error);
       toast.error(`error adding product`);

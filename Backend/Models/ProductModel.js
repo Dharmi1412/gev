@@ -9,7 +9,6 @@ const ProductSchema = new mongoose.Schema({
     type: Number,
     unique: true,
     required: true,
-    // default: 3
   },
   ProductName: {
     type: String,
@@ -22,7 +21,7 @@ const ProductSchema = new mongoose.Schema({
     type: String,
   },
   range: {
-    type: String,
+    type: Number,
   },
   waitingperiod: {
     type: String,

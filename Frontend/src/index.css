@@ -30,6 +30,7 @@ body {
   background: var(--light-primary);
   color: var(--dark-primary);
   /* padding: .5rem;  */
+  position: relative;
 }
 
 a {

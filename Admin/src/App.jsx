@@ -9,6 +9,7 @@ import Sidebar from "./Component/Sidebar/Sidebar";
 import "./App.css";
 import Nav from "./Component/Navbar/Nav";
 import { ToastContainer } from "react-toastify";
+import Product from "../../Frontend/src/pages/Product";
 
 export default function App() {
   return (
@@ -26,6 +27,7 @@ export default function App() {
             { path: "/update/:id", elem: <Update /> },
             { path: "/update", elem: <Update /> },
             { path: "/list", elem: <List /> },
+           
           ].map((obj, index) => {
             return <Route key={index} element={obj.elem} path={obj.path} />;
           })}

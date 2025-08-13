@@ -4,6 +4,7 @@ import Ev2 from '../component/ev2/Ev2'
 import Brands from '../component/brands/Brands'
 import FAQs from '../component/FAQs/FAQs'
 import Ev3 from '../component/ev3/Ev3'
+import Booking from '../component/bookings/Booking'
 
 export default function Home() {
   return (
@@ -17,6 +18,8 @@ export default function Home() {
       <FAQs/>
       <div className="divider"></div>
       <Ev3/>
+      <div className="divider"></div>
+      {/* <Booking/> */}
       <div className="divider"></div>
     </div>
   )

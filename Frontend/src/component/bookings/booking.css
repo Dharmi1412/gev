@@ -1,0 +1,48 @@
+.bookings {
+  /* height: 400px; */
+  width: 20%;
+  border: 1px solid rgb(91, 89, 89);
+  border-radius: 10px;
+  background-color: white;
+
+  position: fixed;
+  top: 30%;
+  left: 40%;
+  z-index: 1000;
+}
+
+.close-div{
+    position: relative;
+    left: 93%;
+    
+}
+
+.booking-div {
+  margin: 10px;
+}
+
+.booking-div label {
+  color: var(--dark-primary);
+  margin-bottom: 20px;
+  margin-left: 20px;
+
+}
+
+.book input {
+  margin-left: 50px;
+  background-color: white;
+  border: 1px solid rgb(61, 60, 60);
+  padding: 5px;
+  /* color: blue; */
+
+}
+
+.booking-div-btn button {
+  color:white;
+  background-color: var(--dark-sec);
+  /* border: 1px solid rgb(92, 88, 88); */
+  padding: 5px;
+  position: relative;
+  left: 33%;
+  margin-bottom: 10px;
+}

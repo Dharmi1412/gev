@@ -1,0 +1,25 @@
+.products{
+    margin-left: 60px;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+}
+
+.subproduct-div{
+
+}
+
+.subproduct-div img{
+    border: 1px solid black;
+    height: 500px;
+    width: 500px;
+    margin: 10px 40px;
+
+}
+
+.products-div{
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    margin: 10px;
+}
