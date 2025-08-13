@@ -25,7 +25,11 @@ function Ev2() {
   }, [showForm]);
   return (
     <div className="ev2-container">
-      {showForm ? <Booking /> : <></>}
+      {showForm ? (
+        <div style={{ position: "relative" }}>
+          <Booking onClose={() => setShowForm(false)} />
+        </div>
+      ) : null}
       <div className="ev2-heading">
         <h5>LATEST E-VEHICLES</h5>
       </div>
@@ -64,9 +68,7 @@ function Ev2() {
                   <Link to={`/product/${product.ProductId}`}>
                     <button>view</button>
                   </Link>
-                  <button onClick={() => setShowForm(!showForm)}>
-                    Book now
-                  </button>
+                  <button onClick={() => setShowForm(true)}>Book now</button>
                 </div>
 
                 <div className="prod-name">
@@ -103,4 +105,3 @@ function Ev2() {
 }
 
 export default Ev2;
-

@@ -1,12 +1,14 @@
 import express from "express";
 import dotenv from "dotenv";
 import cors from "cors";
+import mongoose from "mongoose";
 
 import userRoutes from "./Routes/UserRoutes.js";
 import FeedbackRoutes from "./Routes/feedbackRoutes.js";
 import ProductRouter from "./Routes/ProductRoute.js";
 import connectToDB from "./Config/DB.js";
 import cloudinary from "./Config/cloudinaryConfig.js";
+import bookingRoutes from "./Routes/bookingroutes.js";
 
 const app = express();
 const PORT = process.env.PORT || 4000;
@@ -14,6 +16,14 @@ const PORT = process.env.PORT || 4000;
 dotenv.config();
 connectToDB();
 cloudinary;
+
+mongoose
+  .connect(process.env.MONGO_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
+  .then(() => console.log("MongoDB connected"))
+  .catch((err) => console.error("MongoDB connection error:", err));
 
 // app.use(cors());
 // app.use(
@@ -52,6 +62,7 @@ app.use(express.json());
 app.use("/api/user", userRoutes);
 app.use("/api/feedback", FeedbackRoutes);
 app.use("/api/product", ProductRouter);
+app.use("/api/booking", bookingRoutes);
 
 app.get("/", (req, res) => {
   res.send("API WORKING!");
